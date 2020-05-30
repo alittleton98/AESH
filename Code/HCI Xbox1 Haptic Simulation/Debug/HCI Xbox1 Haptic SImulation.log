@@ -1,0 +1,5 @@
+﻿  HapticSim.cpp
+F:\Users\Littleton\Dev\Programming-Playground\C++ Programs\HCI Xbox1 Haptic SImulation\HapticSim.h(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+HapticSim.obj : error LNK2019: unresolved external symbol _XInputSetState@8 referenced in function "public: void __thiscall Xbox1HapticSimulation::stopVibrate(void)" (?stopVibrate@Xbox1HapticSimulation@@QAEXXZ)
+MSVCRTD.lib(exe_main.obj) : error LNK2019: unresolved external symbol _main referenced in function "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
+F:\Users\Littleton\Dev\Programming-Playground\C++ Programs\HCI Xbox1 Haptic SImulation\Debug\HCI Xbox1 Haptic Simulation.exe : fatal error LNK1120: 2 unresolved externals
