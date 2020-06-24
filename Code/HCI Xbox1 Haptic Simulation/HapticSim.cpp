@@ -116,7 +116,7 @@ int Xbox1HapticSimulation::selectCursorAction() {
 };
 
 int Xbox1HapticSimulation::invalidCursorAction() {
-	vibrationDuration = 1000;
+	vibrationDuration = 1500;
 	vibration.wLeftMotorSpeed = 16384;
 	vibration.wRightMotorSpeed = 32768;
 	return vibrationDuration;
