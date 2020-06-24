@@ -28,19 +28,19 @@ void Xbox1HapticSimulation::vibrate(int duration) {
 		switch (keystroke.VirtualKey) {
 
 		case VK_PAD_LTHUMB_LEFT:
-			leftCursorMove();
+			duration = leftCursorMove();
 		
 		case VK_PAD_LTHUMB_RIGHT:
-			rightCursorMove();
+			duration =  rightCursorMove();
 
 		case VK_PAD_LTHUMB_UP:
-			upCursorMove();
+			duration =  upCursorMove();
 
 		case VK_PAD_LTHUMB_DOWN:
-			downCursorMove();
+			duration = downCursorMove();
 
 		case VK_PAD_A:
-			selectCursorAction();
+			duration = selectCursorAction();
 		}
 	}
 
