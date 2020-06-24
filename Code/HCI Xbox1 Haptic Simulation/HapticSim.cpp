@@ -59,11 +59,8 @@ void Xbox1HapticSimulation::vibrate(int duration) {
 	//set duration = return value of coordinating function
 	controllerState = XInputSetState(0, &vibration); //indicate controller vibration
 	std::this_thread::sleep_for(std::chrono::milliseconds(duration)); //wait for designated duration period in ms (set by coordinating cursor function)
-
-	//conditonal to call stopVibrate upon release of the button/return to neutral for analog inputs
-	if (keystroke.Flags == XINPUT_KEYSTROKE_KEYUP) {
-		simulationObject.stopVibrate(); //stop controller vibration
-	}
+	simulationObject.stopVibrate(); //stop controller vibration
+	
 };
 
 //function to stop controller vibration
