@@ -9,6 +9,7 @@ public:
 	int upCursorMove();
 	int downCursorMove();
 	int selectCursorAction();
+	int invalidCursorAction();
 	void vibrate(int duration);
 	void stopVibrate();
 };
